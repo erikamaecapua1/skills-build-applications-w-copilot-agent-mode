@@ -1,6 +1,7 @@
 name: Step 3 # Django project setup and database test data population
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - "build-octofit-app"
