@@ -47,12 +47,12 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'rest_framework.authtoken',
+    'octotracker',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'tracker',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -95,8 +95,8 @@ DATABASES = {
             'port': 27017,
             'username': '',
             'password': '',
-            'authSource': '',
-            'authMechanism': '',
+            # 'authSource': '',
+            # 'authMechanism': '',
         },
     }
 }
